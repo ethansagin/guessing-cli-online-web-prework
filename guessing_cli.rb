@@ -16,5 +16,7 @@ def run_guessing_game
   case input
     when input.between?(1..6)
       if input == rand(1..6)
+        puts "You guessed the correct number!"
+      elsif input != rand(1..6)
         puts 
 end
