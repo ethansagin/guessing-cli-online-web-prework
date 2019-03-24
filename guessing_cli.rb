@@ -17,9 +17,9 @@ def run_guessing_game
   pc = rand(1..6)
   person = gets.chomp
   until person == "exit"
-    case input
-    when input.between?(1, 6)
-      if input == rand_num
+    case person
+    when person.between?(1, 6)
+      if person == pc
         puts "You guessed the correct number!"
       elsif input != rand_num
         puts "The computer guessed #{rand_num}."
