@@ -8,7 +8,7 @@
 def run_guessing_game
   puts "Guess a number between 1 and 6."
   pc = rand(1..6)
-  person = gets.chomp
+  person = (gets.chomp).to_i
   until person == "exit"
     case person
     when person.between?(1, 6)
@@ -17,11 +17,11 @@ def run_guessing_game
       elsif person != pc
         puts "The computer guessed #{pc}."
       end
-      person = gets.chomp
+      person = (gets.chomp).to_i
       pc = rand(1..6)
     else
       puts "Invalid input, guess a number between 1 and 6."
-      person = gets.chomp
+      person = (gets.chomp).to_i
       pc = rand(1..6)
     end
   end
