@@ -14,5 +14,7 @@ def run_guessing_game
   puts "Guess a number between 1 and 6."
   input = gets.chomp
   case input
-    when input == 1.
+    when input.between?(1..6)
+      if input == rand(1..6)
+        puts 
 end
