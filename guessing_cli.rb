@@ -7,6 +7,10 @@ def rand_num
   rand(1..6)
 end
 
+def exit_game
+  puts "Goodbye"
+end
+
 
 
 
