@@ -3,8 +3,9 @@
 #- Printing out a statement You guessed the correct number! if the number has been guessed correctly, or The computer guessed <number>. if the number has been guessed incorrectly 
 #- Allowing the user to exit the program when exit is the input
 
-def rand_num
-  rand(1..6)
+def comp_op
+  pc = rand(1..6)
+  
 end
 
 def exit_game
