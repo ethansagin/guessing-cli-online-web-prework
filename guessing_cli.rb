@@ -11,20 +11,13 @@ def run_guessing_game
   person = gets.chomp
   binding.pry
   until person == "exit"
-    case person
-    when person.between?(1, 6)
-      if person == pc
-        puts "You guessed the correct number!"
-      elsif person != pc
-        puts "The computer guessed #{pc}."
-      end
-      person = gets.chomp
-      pc = rand(1..6)
+    if person == pc
+      puts "You guessed the correct number!"
     else
-      puts "Invalid input, guess a number between 1 and 6."
-      person = gets.chomp
-      pc = rand(1..6)
+      puts "The computer guessed #{pc}."
     end
+    person = gets.chomp
+    pc = (rand(1..6)).to_s
   end
   puts "Goodbye!"
 end
