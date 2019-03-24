@@ -5,6 +5,7 @@
 
 def random_number
   rand
+  rand
 
 
 
