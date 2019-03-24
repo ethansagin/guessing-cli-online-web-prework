@@ -3,8 +3,8 @@
 #- Printing out a statement You guessed the correct number! if the number has been guessed correctly, or The computer guessed <number>. if the number has been guessed incorrectly 
 #- Allowing the user to exit the program when exit is the input
 
-def guessing_game
-  
+def rand_num
+  rand(1..6)
 end
 
 
@@ -15,8 +15,8 @@ def run_guessing_game
   input = gets.chomp
   case input
     when input.between?(1..6)
-      if input == rand(1..6)
+      if input == rand_num
         puts "You guessed the correct number!"
-      elsif input != rand(1..6)
-        puts 
+      elsif input != rand_num
+        puts "The computer gues"
 end
