@@ -14,8 +14,9 @@ end
 
 def run_guessing_game
   puts "Guess a number between 1 and 6."
-  guess_input
-  until input == "exit"
+  pc = rand(1..6)
+  person = gets.chomp
+  until person == "exit"
     case input
     when input.between?(1, 6)
       if input == rand_num
