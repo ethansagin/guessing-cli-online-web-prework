@@ -7,7 +7,7 @@ require 'pry'
 
 def run_guessing_game
   puts "Guess a number between 1 and 6."
-  pc = (rand(1..6)).to_string
+  pc = (rand(1..6)).to_s
   person = gets.chomp
   binding.pry
   until person == "exit"
