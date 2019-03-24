@@ -21,11 +21,11 @@ def run_guessing_game
     when person.between?(1, 6)
       if person == pc
         puts "You guessed the correct number!"
-      elsif input != rand_num
-        puts "The computer guessed #{rand_num}."
+      elsif person != pc
+        puts "The computer guessed #{pc}."
       end
-      input = gets.chomp
-      rand_num
+      person = gets.chomp
+      pc = rand(1..6)
     else
       puts "Invalid input, guess a number between 1 and 6."
       input = gets.chomp
